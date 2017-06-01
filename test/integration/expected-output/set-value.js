@@ -13,5 +13,8 @@ test('it renders', async function(assert) {
   await fillIn('.foo', 'bar');
   await blur('.foo');
   await fillIn('.foo', 'baz');
+  await fillIn('select', '1');
+  await blur('select')
+
   assert.ok(true);
 });

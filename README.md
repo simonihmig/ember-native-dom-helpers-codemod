@@ -42,7 +42,7 @@ This addon will perform the following transformations suitable for integration t
 | `this.$('.foo').focus()`                             | `await focus('.foo')`                                                 | `focus.js`     |
 | `this.$('.foo').val()`                               | `find('.foo').value`                                                  | `get-value.js` |
 | `this.$('div').hasClass('foo')`                      | `find('div').classList.contains('foo')`                               | `has-class.js` |
-| `this.$('.foo').trigger('click')`                    | `await click('.foo'`                                                  | `key-event.js` |
+| `this.$('.foo').trigger('click')`                    | `await click('.foo')`                                                 | `key-event.js` |
 | `this.$('.foo').trigger('keydown', { keyCode: 13 })` | `await keyEvent('.foo', 'keydown', 13)`                               | `key-event.js` |
 | `this.$('.foo').length`                              | `findAll('.foo').length`                                              | `length.js`    |
 | `this.$('.foo').prop('tagName')`                     | `find('.foo').tagName`                                                | `prop.js`      |

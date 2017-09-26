@@ -10,6 +10,7 @@ test('it renders', async function(assert) {
   this.render(hbs`{{foo-bar}}`);
 
   await click('.foo');
+  await click('.baz a');
   await click(findAll('.foo .bar')[3]);
   assert.ok(true);
 });

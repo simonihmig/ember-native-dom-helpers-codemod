@@ -33,6 +33,7 @@ test('it renders', function(assert) {
   assert.ok(this.$('.foo:visible').length);
 
   assert.ok(this.$('.foo:eq(0)').length);
+  assert.ok(this.$('.foo:eq(1)').length);
   assert.ok(this.$('.foo:first-child').length);
   assert.ok(this.$('.foo:last-child').length);
 });

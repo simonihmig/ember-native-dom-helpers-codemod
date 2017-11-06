@@ -36,13 +36,13 @@ test('it renders', function(assert) {
   assert.ok(this.$('.foo:submit').length);
   assert.ok(this.$('.foo:text').length);
   assert.ok(this.$('.foo:visible').length);
-  assert.ok(this.$(JQEXTENSION_SELECTOR_AS_LOCAL_CONST).length);
-  assert.ok(this.$(ANY_SELECTOR_AS_IMPORTED_CONST).length);
 
   assert.ok(this.$('.foo:eq(0)').length);
   assert.ok(this.$('.foo:eq(1)').length);
   assert.ok(this.$('.foo:first-child').length);
   assert.ok(this.$('.foo:last-child').length);
+  assert.ok(this.$(JQEXTENSION_SELECTOR_AS_LOCAL_CONST).length);
+  assert.ok(this.$(ANY_SELECTOR_AS_IMPORTED_CONST).length);
   assert.ok(this.$(NORMAL_SELECTOR).length);
   assert.ok(this.$(NORMAL_PSEUDO_SELECTOR).length);
 });

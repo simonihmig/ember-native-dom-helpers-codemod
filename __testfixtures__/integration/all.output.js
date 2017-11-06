@@ -25,8 +25,8 @@ test('it renders again', function(assert) {
   this.render(hbs`{{foo-bar}}`);
 
   let selector = '.foo input';
-  assert.equal(findAll(selector).length, 1);
-  assert.equal(find(selector).value, 'foo');
+  assert.equal(findAll(this.$(selector)[0]).length, 1);
+  assert.equal(find(this.$(selector)[0]).value, 'foo');
   assert.ok(find('.foo').classList.contains('selected'));
 });
 

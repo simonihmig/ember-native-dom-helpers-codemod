@@ -84,7 +84,7 @@ These transformations are available for acceptance tests:
 If you want to run only selected transforms on your code, you can just the needed transform:
 
 ```bash
-jscodeshift -t ../ember-native-dom-helpers-codemod/lib/transforms/click.js tests/integration
+jscodeshift -t ../ember-native-dom-helpers-codemod/lib/transforms/integration/click.js tests/integration
 ```
 
 

@@ -7,6 +7,7 @@ moduleForComponent('foo-bar', 'Integration | Component | foo bar', {
 
 test('transforms get() correctly', function(assert) {
   assert.ok(this.$('.foo').get(1));
+  assert.ok(this.$('.foo').get(-2));
 
   const otherGet = someOtherObj.get(1);
 });

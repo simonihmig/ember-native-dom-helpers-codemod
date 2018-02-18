@@ -8,6 +8,7 @@ moduleForComponent('foo-bar', 'Integration | Component | foo bar', {
 
 test('transforms get() correctly', function(assert) {
   assert.ok(findAll('.foo')[1]);
+  assert.ok(findAll('.foo').slice(-2)[0]);
 
   const otherGet = someOtherObj.get(1);
 });

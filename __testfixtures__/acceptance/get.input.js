@@ -5,6 +5,8 @@ moduleForAcceptance('get');
 
 test('transforms get() correctly', function(assert) {
   assert.ok(find('.foo bar').get(3));
+  assert.ok(find('.foo bar').get(-1));
+  assert.ok(find('.foo bar').get(-3));
 
   const otherGet = someOtherObj.get(1);
 });

@@ -4,6 +4,10 @@
 
 A [jscodeshift](https://github.com/facebook/jscodeshift) based codemod to help migrating your jQuery based Ember tests to [ember-native-dom-helpers](https://github.com/cibernox/ember-native-dom-helpers).
 
+**If you are looking for a way to transform your tests to Ember's latest testing APIs, specifically to the new helpers
+provided by `@ember/test-helpers`, then please use this codemod's successor:<br>
+[ember-test-helpers-codemod](https://github.com/simonihmig/ember-test-helpers-codemod)!**
+
 *Please note that this will not be able to cover all possible cases how jQuery based tests can be written.
 Given the dynamic nature of JavaScript and the extensive API and fluent interface of jQuery, this would be impossible.
 Instead this codemod focuses to cover the most common usages and do those transformations that it can safely do.

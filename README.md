@@ -24,10 +24,9 @@ repository like Git and that you have no outstanding changes to commit before
 running this tool.
 
 ```bash
-npm install -g ember-native-dom-helpers-codemod
 cd my-ember-app-or-addon
-ember-native-dom-helpers-codemod --type=integration tests/integration
-ember-native-dom-helpers-codemod --type=acceptance tests/acceptance
+npx ember-native-dom-helpers-codemod --type=integration tests/integration
+npx ember-native-dom-helpers-codemod --type=acceptance tests/acceptance
 ```
 
 ## Transformations
